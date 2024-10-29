@@ -9,10 +9,15 @@ function Cabins() {
     getCabins().then((data) => console.log(data));
   }, []);
   return (
-    <Row type="horizontal">
-      <Heading as="h1">All cabins</Heading>
-      <CabinTable />
-    </Row>
+    <>
+      <Row type="horizontal">
+        <Heading as="h1">All cabins</Heading>
+        <p>Filter / Sort</p>
+      </Row>
+      <Row>
+        <CabinTable />
+      </Row>
+    </>
   );
 }
 
